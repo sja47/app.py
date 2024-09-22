@@ -8,4 +8,4 @@ print(df.head(50))
 import streamlit as st
 import pandas as pd
 import numpy as np
-!npm install -g localtunnel@2.0.2
+! streamlit run app.py & npx localtunnel --port 8501
