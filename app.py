@@ -12,6 +12,13 @@ st.title("Exploring Tourism and Accommodation Trends in Selected Lebanese Towns"
 Tourism_Index_COLUMN = 'Tourism Index'
 Number_of_Hotels_COLUMN = 'Total number of hotels'
 data_csv='551015b5649368dd2612f795c2a9c2d8_20240902_115953.csv'
+@st.cache_data  
+def load_data(nrows):
+  data = pd.read_csv(data_csv, nrows=nrows)
+  #lowercase = lambda x: str(x).lower()
+  #data.rename(lowercase, axis='columns', inplace=True)
+  #data[Tourism_Index_COLUMN] = pd.to_datetime(data[DATE_COLUMN])
+  return data
 def load_data(nrows):
   data = pd.read_csv(data_csv, nrows=nrows)
   #lowercase = lambda x: str(x).lower()
