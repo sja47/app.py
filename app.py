@@ -1,10 +1,9 @@
-from google.colab import files
-uploaded = files.upload()
-
 import pandas as pd
-df = pd.read_csv('551015b5649368dd2612f795c2a9c2d8_20240902_115953.csv')
-print("Loaded data into DataFrame.")
-print(df.head(50))
+uploaded = files.upload()
+for filename in uploaded.keys():
+    df = pd.read_csv(filename)  # Load the CSV file
+    print(f"Loaded {filename} into DataFrame.")
+
 import streamlit as st
 import pandas as pd
 import numpy as np
