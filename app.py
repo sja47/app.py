@@ -11,6 +11,7 @@ import numpy as np
 import streamlit as st
 import pandas as pd
 import numpy as np
+import plotly.express as px
 st.title("Exploring Tourism and Accommodation Trends in Selected Lebanese Towns")
 Tourism_Index_COLUMN = 'Tourism Index'
 Number_of_Hotels_COLUMN = 'Total_number_of_hotels'
