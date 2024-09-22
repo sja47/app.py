@@ -4,7 +4,6 @@ uploaded = files.upload()
 for filename in uploaded.keys():
     df = pd.read_csv(filename)  # Load the CSV file
     print(f"Loaded {filename} into DataFrame.")
-  print(df.head(50))
 pip install streamlit
 import streamlit as st
 import pandas as pd
