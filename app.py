@@ -8,5 +8,4 @@ print(df.head(50))
 import streamlit as st
 import pandas as pd
 import numpy as np
-%%writefile app.py
-
+! wget -q -o - ipv4.icanhazip.com
