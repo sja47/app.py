@@ -18,7 +18,7 @@ def load_data(nrows):
   #data.rename(lowercase, axis='columns', inplace=True)
   #data[Tourism_Index_COLUMN] = pd.to_datetime(data[DATE_COLUMN])
   return data
-data = load_data(50)
+
 if st.checkbox('Show raw data'):
   st.subheader('Raw data')
   st.write(data)
