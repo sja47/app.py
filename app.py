@@ -20,6 +20,8 @@ def load_data(nrows):
   #data[Tourism_Index_COLUMN] = pd.to_datetime(data[DATE_COLUMN])
   return data
   data_load_state = st.text('Loading data...')
+  data = load_data(50)
+
 
 if st.checkbox('Show raw data'):
   st.subheader('Raw data')
