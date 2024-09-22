@@ -19,10 +19,6 @@ def load_data(nrows):
   #data.rename(lowercase, axis='columns', inplace=True)
   #data[Tourism_Index_COLUMN] = pd.to_datetime(data[DATE_COLUMN])
   return data
-  
-data_load_state = st.text('Loading data...')
-data = load_data(50)
-data_load_state.text("Done! (using st.cache_data)")
 
 if st.checkbox('Show raw data'):
   st.subheader('Raw data')
