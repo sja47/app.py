@@ -8,4 +8,4 @@ print(df.head(50))
 import streamlit as st
 import pandas as pd
 import numpy as np
-!apt-get install nodejs
+!npm install -g localtunnel@2.0.2
