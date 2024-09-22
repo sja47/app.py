@@ -1,3 +1,4 @@
+pip install plotly
 import pandas as pd
 data_url = 'https://linked.aub.edu.lb/pkgcube/data/551015b5649368dd2612f795c2a9c2d8_20240902_115953.csv'
 
