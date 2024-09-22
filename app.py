@@ -5,3 +5,4 @@ data_url = 'https://linked.aub.edu.lb/pkgcube/data/551015b5649368dd2612f795c2a9c
 df = pd.read_csv(data_url)  # Load the CSV file
 print("Loaded data into DataFrame.")
 print(df.head(50))
+pip install streamlit
