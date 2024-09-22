@@ -27,5 +27,13 @@ st.markdown("In this interactive dashboard, we explore two important aspects of 
 st.markdown("Tourism Index:The Tourism Index measures a town's attractiveness to tourists, considering factors like attractions, culture, and infrastructure. A higher score indicates a greater ability to attract visitors, boosting economic activity and hospitality growth.")
 st.markdown("Number of Hotels:The number of hotels in a town reflects its accommodation capacity. Towns with more hotels are better positioned to welcome tourists, highlighting their dependence on tourism for economic purposes.")
 st.subheader('Number of hotels By Town')
-
+Hotels_to_filter = st.slider('Number of Hotels', 0, 4, 0)
+filtered_data = data[Tourism_Index_COLUMN ][data[Number_of_Hotels_COLUMN] == Hotels_to_filter]
+chart_data = pd.DataFrame(
+    {
+        "Town": data['Town'],
+        "Hotels": data[Number_of_Hotels_COLUMN][data[Number_of_Hotels_COLUMN]==Hotels_to_filter]
+  
+    }
+)
 
