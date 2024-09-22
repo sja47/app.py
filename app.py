@@ -23,4 +23,6 @@ if st.checkbox('Show raw data'):
   st.subheader('Raw data')
   st.write(data)
 
+st.markdown("In this interactive dashboard, we explore two important aspects of tourism in Lebanon.")
+
 
