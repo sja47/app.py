@@ -29,11 +29,5 @@ st.markdown("Number of Hotels:The number of hotels in a town reflects its accomm
 st.subheader('Number of hotels By Town')
 Hotels_to_filter = st.slider('Number of Hotels', 0, 4, 0)
 filtered_data = data[Tourism_Index_COLUMN ][data[Number_of_Hotels_COLUMN] == Hotels_to_filter]
-chart_data = pd.DataFrame(
-    {
-        "Town": data['Town'],
-        "Hotels": data[Number_of_Hotels_COLUMN][data[Number_of_Hotels_COLUMN]==Hotels_to_filter]
-  
-    }
-)
+
 
